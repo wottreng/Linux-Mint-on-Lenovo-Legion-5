@@ -1,7 +1,7 @@
 timeStamp: `13 September 2021`
 
 # Linux-Mint-on-Lenovo-Legion-5 💻
-how to install Linux Mint on Legion 5 to have proper hardware drivers and screen brightness control \
+### How to install Linux Mint on Legion 5 to have proper hardware drivers and screen brightness control 
 Linux Mint is forked from Debian and similar to Ubuntu so this may work for Ubuntu OS as well. \
 I did try to install Ubuntu 21.xx OS and it created a custom NVIDIA driver that didnt quite work properly so be warned.
 
