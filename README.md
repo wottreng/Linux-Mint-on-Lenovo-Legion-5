@@ -30,15 +30,22 @@ STEPS to get screen brightness to work correctly and brightness keys to actually
   a: this command comes with latest nvidia drivers installed in prior steps to graphics card working  
   b: this will generate /etc/X11/xorg.conf
   
-2: add `Option         "RegistryDwords" "EnableBrightnessControl=1"` to xorg.conf file inside device section
+2: add `"RegistryDwords" "EnableBrightnessControl=1"` to xorg.conf file inside device section
   a: { sudo gedit /etc/X11/xorg.conf }
-  b: add `Option         "RegistryDwords" "EnableBrightnessControl=1"` in device section
+  b: add `Option         "RegistryDwords" "EnableBrightnessControl=1"` in device section:
+  
     example: 
+    
     Section "Device"
+    
       Identifier     "Device0"
+      
       Driver         "nvidia"
+      
       VendorName     "NVIDIA Corporation"
+      
       Option         "RegistryDwords" "EnableBrightnessControl=1"
+      
     EndSection
     
  3: reboot system and X11 will pick up the new configuration and your brightness function keys will now work
