@@ -20,7 +20,7 @@ STEPS to get Hardware operating properly [this will get graphics card to coopera
   a: using 'Update Manager' gui : credit: https://www.makeuseof.com/upgrade-kernel-linux-mint/
   
 2: isntall latest nvidia graphics drivers (470.63.01)
-  a: using "additional drivers" gui update graphics drivers to latest nvidia driver version
+  a: using "driver manager" gui update graphics drivers to latest nvidia driver version
 
 STEPS to get screen brightness to work correctly and brightness keys to actually change brightness:
 
