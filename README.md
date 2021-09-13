@@ -56,4 +56,10 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  ```  
  3: reboot system and X11 will pick up the new configuration and your brightness function keys will now work 
   
-  ## Cheers everyone 🍺 
+ ## Other helpful tips
+ * ` F2 ` : open BIOS during boot
+ * ` Ctrl + Alt + F1 ` : change to basic command line interface
+ * ` Ctrl + Alt + F7 ` : change back to GUI 'desktop' interface
+ * hold `Shift` during boot to open up grub for advanced options like recovery mode
+ 
+ ## Cheers everyone 🍺 
