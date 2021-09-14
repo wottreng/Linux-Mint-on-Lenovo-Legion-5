@@ -55,7 +55,11 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
     EndSection 
  ```  
  3: reboot system and X11 will pick up the new configuration and your brightness function keys will now work 
-  
+ 
+ ## Battery Saver mode
+ * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
+ * limits charging above 60%
+ 
  ## Other helpful tips
  * ` F2 ` : open BIOS during boot
  * ` Ctrl + Alt + F1 ` : change to basic command line interface
