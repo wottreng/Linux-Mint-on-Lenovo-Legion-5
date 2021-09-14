@@ -62,4 +62,6 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  * ` Ctrl + Alt + F7 ` : change back to GUI 'desktop' interface
  * hold `Shift` during boot to open up grub for advanced options like recovery mode
  
+ ### another great reference for legion 5: https://github.com/antony-jr/lenovo-legion5-15arh05-scripts
+ 
  ## Cheers everyone 🍺 
