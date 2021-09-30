@@ -56,6 +56,13 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  ```  
  3: reboot system and X11 will pick up the new configuration and your brightness function keys will now work 
  
+ ## Realtek wifi 6 working with proper drivers:
+ see this github for proper drivers: https://github.com/lwfinger/rtw89
+ * git clone https://github.com/lwfinger/rtw89.git -b v5
+ * cd rtw89
+ * make
+ * sudo make sign-install
+ 
  ## Battery Saver mode
  * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
  * limits charging above 60%
