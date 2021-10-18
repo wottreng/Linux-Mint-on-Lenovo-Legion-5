@@ -61,7 +61,8 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  * git clone https://github.com/lwfinger/rtw89.git -b v5
  * cd rtw89
  * make
- * sudo make sign-install
+ * sudo make install
+ * sudo modprobe rtw89pci 
  
  ## Battery Saver mode
  * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
