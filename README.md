@@ -34,7 +34,7 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
   * `sudo mintdrivers` : Mint Driver Update GUI
   * then install latest NVIDIA proprietary driver
 
-## STEPS to get screen brightness to work correctly and brightness keys to actually change brightness:
+## STEPS to get screen brightness to work correctly and brightness keys to actually change screen brightness:
 
 1: generate xorg.conf file: `sudo nvidia-xconfig` 
   * this command comes with latest nvidia drivers installed in prior steps to graphics card working 
@@ -66,7 +66,7 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  
  ## Battery Saver mode
  * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
- * limits charging above 60%
+ * limits charging above 60% capacity
  
  ## Other helpful tips
  * ` F2 ` : open BIOS during boot
