@@ -64,6 +64,9 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  * sudo make install
  * sudo modprobe rtw89pci 
  
+ These commands are compiled in the script: `installRTW89wifiDriver` \
+ ` NOTE: this entire process needs to be repeated on every kernel update `
+ 
  ## Battery Saver mode
  * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
  * limits charging above 60% capacity
