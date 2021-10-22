@@ -42,7 +42,7 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
   ref: https://askubuntu.com/questions/217758/how-to-make-an-xorg-conf-file
   
 2: add `"EnableBrightnessControl=1"` to xorg.conf file inside device section 
-  * you need to add the whole line: `Option         "RegistryDwords" "EnableBrightnessControl=1"`
+  * NOTE: you need to add the whole line: `Option         "RegistryDwords" "EnableBrightnessControl=1"`
   * `sudo gedit /etc/X11/xorg.conf` or `sudo nano /etc/X11/xorg.conf`
   * add line in device section: \
    <b> example: <b>
