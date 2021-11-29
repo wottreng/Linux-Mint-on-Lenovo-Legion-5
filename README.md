@@ -90,6 +90,10 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  * run `batterySaverMode.py` to put laptop into battery saver mode when plugged in
  * limits charging above 60% capacity
  
+ 1: add script to $PATH: `/bin/batterySaverMode.py`
+ 2: make it excutabel: `chmod 777 /bin/batterySaverMode.py`
+ 3: call it from a command line: `batterySaverMode.py`
+ 
  ## Other helpful tips
  * ` F2 ` : open BIOS during boot
  * ` Ctrl + Alt + F1 ` : change to basic command line interface
