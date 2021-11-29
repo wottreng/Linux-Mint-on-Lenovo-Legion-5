@@ -55,7 +55,25 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
       Option         "RegistryDwords" "EnableBrightnessControl=1" 
     EndSection 
  ```  
- 3: reboot system and X11 will pick up the new configuration and your brightness function keys will now work 
+ 3: add brightnessControl.py to your system $PATH ex. `/bin/brightnessControl.py`
+ 
+ 4: make sure brightnessControl.py can be executed: `chmod 777 /bin/brightnessControl.py`
+ 
+ 5: open Menu -> Keyboard -> Shortcuts 
+ 
+ 6: then click on `Custom Shortcuts` then `Add custom shortcut` -> Name: brightnessControlUp, Command: /bin/brightnessControl.py -d DP-4 -c 5
+ 
+ 7: click on the new shortcut then click on `unassigned` under `Keyboard bindings`
+ 
+ 8: click your brightness up function key to bind this function to the key
+ 
+ 9: create another `Custom Shortcut` -> Name: brightnessControlDown, Command: /bin/brightnessControl.py -d DP-4 -c -5
+ 
+ 10: click on the new shortcut then click on `unassigned` under `Keyboard bindings`
+ 
+ 11: click your brightness down function key to bind this function to the key
+ 
+ * your brightness keys will now work properly!
  
  ## Realtek wifi 6 working with proper drivers:
  see this github for proper drivers: https://github.com/lwfinger/rtw89
