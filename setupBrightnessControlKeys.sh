@@ -10,6 +10,8 @@ echo "moving script into your /bin $PATH...."
 sudo mv ./brightnessControl.py /bin/brightnessControl.py
 echo "making brightnessControl.py excutable..."
 sudo chmod 777 /bin/brightnessControl.py
+echo "saving your current key bindings just in case..."
+dconf dump /org/cinnamon/desktop/keybindings/ > OldKeyBindings.dconf
 echo "loading custom key bindings into dconf..."
 dconf load /org/cinnamon/desktop/keybindings/ < keyBindings.dconf
 echo "try your brightness keys now, they should work"
