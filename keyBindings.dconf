@@ -1,0 +1,16 @@
+[/]
+custom-list=['custom0', 'custom1', '__dummy__']
+
+[custom-keybindings/custom0]
+binding=['MonBrightnessDown']
+command='/bin/brightnessControl.py -d DP-4 -c -5'
+name='brightnessControlDown'
+
+[custom-keybindings/custom1]
+binding=['MonBrightnessUp']
+command='/bin/brightnessControl.py -d DP-4 -c 5'
+name='brightnessControlUp'
+
+[media-keys]
+screen-brightness-down=@as []
+screen-brightness-up=@as []
