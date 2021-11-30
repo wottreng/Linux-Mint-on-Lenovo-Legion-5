@@ -74,6 +74,7 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  11: click your brightness down function key to bind this function to the key
  
  * your brightness keys will now work properly!
+ * check custom keybindings: `dconf dump /org/cinnamon/desktop/keybindings/custom-keybindings/`
  
  ## Realtek wifi 6 working with proper drivers:
  see this github for proper drivers: https://github.com/lwfinger/rtw89
