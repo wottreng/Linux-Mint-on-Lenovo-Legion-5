@@ -35,7 +35,7 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
   * then install latest NVIDIA proprietary driver
 
 ## STEPS to get screen brightness to work correctly and brightness keys to actually change screen brightness:
-### note: no longer works with nvidia driver version 470.74 so I am using `brightnessControl.py` to control screen brightness with software
+### note: screen brightness keybindings do not work so I am using `brightnessControl.py` to control screen brightness with software
 
 1: generate xorg.conf file: `sudo nvidia-xconfig` 
   * this command comes with latest nvidia drivers installed in prior steps to graphics card working 
