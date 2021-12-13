@@ -95,7 +95,8 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
  
  ### Next Steps & Noted Issues
  * sleep function does not work correctly - screen goes blank after wake
- * bluetooth becomes unresponsive randomly - could be bluez bluetooth software issue
+ * bluetooth becomes unresponsive randomly - could be bluez bluetooth software issue'
+ * hybrid graphics, currently using discrete graphics only 
  
  
  ## Cheers everyone 🍺 
