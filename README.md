@@ -26,15 +26,20 @@ these are the steps I took to get Linux Mint 20.2 Cinnamon v. 4.4.8 on a Lenovo 
 
 ## STEPS to get Hardware operating properly [this will get graphics card to cooperate with OS for proper operation]: 
 
-1: install latest linux kernel (kernel: 5.11.0-34-generic) 
+1: install latest linux kernel (kernel: 5.13.0-21-generic) 
   * cli cmd: `sudo mintupdate` ➡ Mint Update Manager GUI
   * write up for 'Update Manager' gui : credit: https://www.makeuseof.com/upgrade-kernel-linux-mint/ 
-  * GUI steps: Update Manager ➡ View ➡ Linux Kernels ➡ (5.11) ➡ install 
+  * GUI steps: Update Manager ➡ View ➡ Linux Kernels ➡ (5.13) ➡ install 
   
-2: install latest nvidia graphics drivers (470.63.01) \
+2: install latest nvidia graphics drivers (470.86) \
 using "driver manager" gui update graphics drivers to latest nvidia driver version 
   * cli cmd: `sudo mintdrivers` ➡ Mint Driver Update GUI
   * then install latest NVIDIA proprietary driver
+
+3: change graphics to discrete in UEFI settings
+ * restart your computer ➡ cli cmd: `reboot`
+ * when lenovo logo flashes on screen during boot, press `F2` repeatedly
+ * switch graphics to `discrete` in your UEFI settings
 
 ## STEPS to get screen brightness to work correctly and brightness keys to actually change screen brightness:
 
