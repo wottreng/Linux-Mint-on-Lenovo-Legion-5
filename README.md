@@ -73,7 +73,7 @@ using "driver manager" gui update graphics drivers to latest nvidia driver versi
  ## Realtek wifi 6 working with proper drivers:
  Repository for driver: https://github.com/lwfinger/rtw89 \
  CLI commands:
- * git clone https://github.com/lwfinger/rtw89.git -b v5
+ * git clone https://github.com/lwfinger/rtw89.git
  * cd rtw89
  * make
  * sudo make install
