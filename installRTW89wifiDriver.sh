@@ -1,12 +1,24 @@
 #!/bin/bash
 # READ the DOCS: https://github.com/lwfinger/rtw89
-echo "cloning rtw89 repository..."
-git clone https://github.com/lwfinger/rtw89.git -b v5
-cd rtw89
-echo "build driver..."
+
+set -e # exit if an error occurs
+
+echo -e "\033[1;32m [*] cloning rtw89 repository... \033[0m"
+git clone https://github.com/lwfinger/rtw89.git
+
+echo -e "\033[0;33m [*] changing directory to rtw89 repository \033[0m"
+cd rtw89/
+
+echo -e "\033[1;33m [*] build driver... \033[0m"
 make
-echo "install driver..."
+
+echo -e "\033[1;33m [*] install driver... \033[0m"
 sudo make install
-echo "activate driver..."
-sudo modprobe rtw89pci
-echo "wifi should work now, Cheers"
+
+echo -e "\033[1;31m [*] removing old kernel module driver... \033[0m"
+sudo modprobe -v -r rtw89pci
+
+echo -e "\033[0;33m [*] activating new kernel module driver... \033[0m"
+sudo modprobe -v rtw89pci
+
+echo -e "\033[0;32m [*] wifi should work now, Cheers 🍻 \033[0m"
