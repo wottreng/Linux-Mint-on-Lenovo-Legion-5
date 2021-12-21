@@ -1,4 +1,4 @@
-timeStamp: `29 November 2021`
+timeStamp: `21 December 2021`
 
 # Linux-Mint-on-Lenovo-Legion-5 💻
 ### How to install Linux Mint on Legion 5 to have proper hardware drivers and screen brightness control 
