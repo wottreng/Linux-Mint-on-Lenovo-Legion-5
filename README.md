@@ -77,7 +77,7 @@ using "driver manager" gui update graphics drivers to latest nvidia driver versi
  * cd rtw89
  * make
  * sudo make install
- * sudo modprobe rtw89pci 
+ * sudo modprobe -v rtw89pci 
  
  These commands are compiled in the script: `installRTW89wifiDriver` \
  ⚠ NOTE: this entire process needs to be repeated on every kernel update ⚠
