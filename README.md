@@ -100,7 +100,7 @@ using "driver manager" gui update graphics drivers to latest nvidia driver versi
  
  ## Other helpful tips
  * ` F2 ` : open BIOS during boot
- * ` Ctrl + Alt + F1 ` : change to basic command line interface
+ * ` Ctrl + Alt + F1 ` or  ` Ctrl + Alt + F2 `: change to basic command line interface
  * ` Ctrl + Alt + F7 ` : change back to GUI 'desktop' interface
  * hold `Shift` during boot to open up grub for advanced options like recovery mode
  * open cli: `CTRL + ALT + T`
