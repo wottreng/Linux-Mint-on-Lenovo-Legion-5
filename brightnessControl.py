@@ -54,7 +54,7 @@ if __name__ == '__main__':
         print("-c: change brightness by percent, ex. '-c 5' or '-c -5'")
         print("-d: set display device, ex. your auxiliary screen: '-d HDMI-0'")
         print("-s: set brightness value directly, ex. '-s 60'")
-        print("v: verbose, you like to read lots of text")
+        print("-v: verbose, you like to read lots of text")
         print("----------------------------------------------------")
         quit()
     if "-v" in sys.argv:
