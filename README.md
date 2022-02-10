@@ -60,6 +60,10 @@ using "driver manager" gui update graphics drivers to latest nvidia driver versi
 ## STEPS to get screen brightness to work correctly and brightness keys to actually change screen brightness:
  ** update for Mint 20.3 Cinnamon, script updated to make fix device name convention bug ** \
 NOTE: brightness keys still not working so use this repository to control brightness in software
+
+TLDR cli magic: `wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/heads/main.zip && unzip main.zip && cd Linux-Mint-on-Lenovo-Legion-5-main && chmod 777 setupBrightnessControlKeys.sh && ./setupBrightnessControlKeys.sh`
+
+git setup:
  
  1: download this repository ➡ cli cmd: `git clone https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5.git`
  
@@ -83,6 +87,8 @@ NOTE: brightness keys still not working so use this repository to control bright
  ## Battery Saver mode
  * `batterySaverMode.py` puts laptop into battery saver mode when plugged in
  * limits charging above 60% capacity
+
+TLDR cli magic: `wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/heads/main.zip && unzip main.zip && cd Linux-Mint-on-Lenovo-Legion-5-main && chmod 777 batterySaverMode.py && sudo mv ./batterySaverMode.py /bin/`
  
  1: make it excutable ➡ cli cmd: `chmod 777 ./batterySaverMode.py`
 
