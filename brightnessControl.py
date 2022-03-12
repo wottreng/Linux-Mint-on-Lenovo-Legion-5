@@ -8,7 +8,7 @@ import sys
 class brightnessControl:
     def __init__(self):
         self.verbose = False
-        self.version = "1.1"
+        self.version = 1.1
         self.specificDevice = False
         self.device = ""
         self.connectedDevices = []
