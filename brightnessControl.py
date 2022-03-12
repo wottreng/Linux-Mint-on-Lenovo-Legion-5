@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # install into your system Path and bind to brightness keys to control brightness
 # see github writeup for more info: https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5
 
@@ -8,6 +8,7 @@ import sys
 class brightnessControl:
     def __init__(self):
         self.verbose = False
+        self.version = "1.1"
         self.specificDevice = False
         self.device = ""
         self.connectedDevices = []
