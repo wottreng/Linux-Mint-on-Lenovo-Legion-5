@@ -1,6 +1,7 @@
-timeStamp: `10 Feb 2022`
+timeStamp: `12 March 2022`
 
-** updated for Linux Mint 20.3 Cinnamon**
+** updated for Linux Mint 20.3 Cinnamon** \
+** updated for power consumption issue fix **
 
 # Linux-Mint-on-Lenovo-Legion-5 💻
 ### How to install Linux Mint on Legion 5 to have proper hardware drivers and screen brightness control 
@@ -96,6 +97,33 @@ TLDR cli magic: `wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/
   * cli cmd: `sudo mv ./batterySaverMode.py /bin/batterySaverMode.py`
   
  3: call it from a command line ➡ cli cmd: `batterySaverMode.py`
+ 
+ ## Power Consumption Configuration
+ (credit goes to [O491dogan](https://github.com/O491dogan)) \
+ Higher than normal power consumption has been reported after proper drivers and updates. \
+ The issue seems to be the dGPU not being turned off when not in use.
+ 
+ * check power consumption with `powertop`
+   - `sudo apt install powertop`
+   - optimize system consumption with `sudo powertop --auto-tune`
+   - launch with `sudo powertop` with power cable unplugged
+     - with nothing running, power consumption should be about 10w.
+     - if dGPU is running, power consumption is about 25w. 
+ * Make sure dGPU is set to on-demand
+   - set dGPU to adaptive in BIOS
+   - set dGPU to On-Demand in NVIDIA settings
+     - `nvidia-settings` then select PRIME Profiles, then select NVIDIA On-Demand
+ * Confirm dGPU is set to On-Demand
+   - cmd: `cat /sys/bus/pci/devices/0000:01:00.0/power/control` 
+     - should output `auto` for dGPU on-demand
+     - `on` your dGPU is always on
+ * Battery Life
+   - with dGPU always on, about 2 hours
+   - with dGPU on-demand, about 4 to 5 hours
+   
+ NOTES: \
+ more info, see [discussion](https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/discussions/3)
+ 
  
  ## Other helpful tips
  * ` F2 ` : open BIOS during boot
