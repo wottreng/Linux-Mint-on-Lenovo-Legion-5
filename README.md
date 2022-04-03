@@ -146,3 +146,5 @@ wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/head
  * sleep function does not work correctly - screen goes blank after wake
  
  ## Cheers everyone 🍺 
+
+<a href=" https://www.buymeacoffee.com/wottreng" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
