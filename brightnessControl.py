@@ -9,7 +9,7 @@ import sys
 class brightnessControl:
     def __init__(self):
         self.verbose = False
-        self.version = 2.0
+        self.version = 2.1
         self.specificDevice = False
         self.device = ""
         self.connectedDevices = []
@@ -41,7 +41,7 @@ class brightnessControl:
         brightnessOutput = os.popen("xrandr --prop --verbose | grep -A10 'connected' | grep 'Brightness'").readlines()
         x = 0
         for device in self.connectedDevices:
-            print(f"{device} {brightnessOutput[x].strip()}")
+            print(f"{device} {brightnessOutput[x].strip()}")  # display device settings
             self.systemDeviceSetup[device] = brightnessOutput[x].strip().split(" ")[1]
             x += 1
 
@@ -84,7 +84,9 @@ if __name__ == '__main__':
     if "-v" in sys.argv:
         BC.verbose = True
     BC.getDisplayDevices()
+    print("----- current values ------")
     BC.getAllDisplayDevicesBrightness()
+    print("---------------------------")
     if "-d" in sys.argv:
         index = sys.argv.index("-d")
         BC.device = sys.argv[index + 1]
@@ -105,6 +107,9 @@ if __name__ == '__main__':
             brightnessPercent = BC.systemDeviceSetup[BC.device]
             brightness = int((float(brightnessPercent) * 100) + amount)
             BC.setBrightness(device=BC.device, brightness=brightness)
+        print("----- new values ------")
+        BC.getAllDisplayDevicesBrightness()
+        print("---------------------------")
         quit()
 
     if "-s" in sys.argv:
@@ -123,10 +128,11 @@ if __name__ == '__main__':
         quit()
     if "-u" in sys.argv:
         BC.check_and_update()
+    # ----
     if BC.verbose: print("set display brightness based on system values")
     for device, brightnessPercent in BC.systemDeviceSetup.items():
         brightness = int(float(brightnessPercent) * 100)
         BC.setBrightness(device=device, brightness=brightness)
     if BC.verbose: BC.getAllDisplayDevicesBrightness()
-    print("-----------")
+
     quit()
