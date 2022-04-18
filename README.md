@@ -142,8 +142,8 @@ wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/head
  
  ### Please contribute 📥 or message me if there is a better way! Lets help the Linux Community! 👌
  
- ### Next Steps & Noted Issues
- * sleep function does not work correctly - screen goes blank after wake
+ ### Noted Issues
+ * check Issues tab 
  
  ## Cheers everyone 🍺 
 
