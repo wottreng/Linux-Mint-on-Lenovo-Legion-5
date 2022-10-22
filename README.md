@@ -59,7 +59,7 @@ using "driver manager" gui update graphics drivers to latest nvidia driver versi
 * clean out garbage and fix links: `sudo apt autoremove && sudo apt autoclean`
 
 ## STEPS to get screen brightness to work correctly and brightness keys to actually change screen brightness:
- ** update for Mint 20.3 Cinnamon, script updated to make fix device name convention bug ** \
+ ** update for Mint 20.3 Cinnamon, script updated to fix device name convention bug ** \
 NOTE: brightness keys still not working so use this repository to control brightness in software
 
 TLDR cli magic (copy and paste into your cmd line): 
@@ -69,13 +69,25 @@ wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/head
 
 git setup:
  
- 1: download this repository ➡ cli cmd: `git clone https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5.git`
+ 1: download this repository ➡ cli cmd: 
+ ``` markdown
+ git clone https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5.git 
+ ```
  
- 2: change directory ➡ cli cmd: `cd Linux-Mint-on-Lenovo-Legion-5/`
+ 2: change directory ➡ cli cmd: 
+ ``` markdown
+ cd Linux-Mint-on-Lenovo-Legion-5/
+ ```
  
- 3: make setupBrightnessControlKeys.sh excutable ➡ cli cmd: `chmod 777 setupBrightnessControlKeys.sh`
+ 3: make setupBrightnessControlKeys.sh excutable ➡ cli cmd: 
+ ``` markdown
+ chmod 777 setupBrightnessControlKeys.sh
+ ```
  
- 4: run setup script ➡ cli cmd: `./setupBrightnessControlKeys.sh` 
+ 4: run setup script ➡ cli cmd: 
+ ``` markdown
+ ./setupBrightnessControlKeys.sh
+ ```
 
  5: test your brightness keys, they should work properly now! If not see trouble shooting below
  
@@ -83,7 +95,7 @@ git setup:
  * Read `setupBrightnessControlKeys.sh` for comments on how this works and how to remove key bindings if needed
  * run `brightnessControl.py -h` for help output and supported arguments
  * for TROUBLE SHOOTING or changes see `Keyboard` in App Menu ➡ `Shortcuts` ➡ `Custom Shortcuts` 
- * Common issue with script is it finding the wrong device name. Run `brightnessControl.py -v` to see what device names its finding and you may need to set default in your key bindings like so: `brightnessControl.py -d DEV-NAME -c 5` 
+ * Common issue with script is it finding the wrong device name. Run `brightnessControl.py -v` to see what device names its finding and you may need to set default in your key bindings like so: `brightnessControl.py -d DEVICE-NAME -c 5` 
 
  ## Realtek wifi 6 working with proper drivers:
  ⚠ NOTE: wifi driver is now included in Mint 20.3. If you still need drivers then look at older commits for manual install process ⚠
@@ -97,12 +109,21 @@ TLDR cli magic (copy and paste into your cmd line):
 wget https://github.com/wottreng/Linux-Mint-on-Lenovo-Legion-5/archive/refs/heads/main.zip && unzip main.zip && cd Linux-Mint-on-Lenovo-Legion-5-main && chmod 777 batterySaverMode.py && sudo mv ./batterySaverMode.py /bin/
 ```
  
- 1: make it excutable ➡ cli cmd: `chmod 777 ./batterySaverMode.py`
+ 1: make it excutable ➡ cli cmd: 
+ ``` markdown
+ chmod 777 ./batterySaverMode.py
+ ```
 
  2: add script to $PATH (ie. your `/bin` folder) ➡ `/bin/batterySaverMode.py` 
-  * cli cmd: `sudo mv ./batterySaverMode.py /bin/batterySaverMode.py`
+  * cli cmd: 
+  ``` markdown
+  sudo mv ./batterySaverMode.py /bin/batterySaverMode.py
+  ```
   
- 3: call it from a command line ➡ cli cmd: `batterySaverMode.py`
+ 3: call it from a command line ➡ cli cmd: 
+ ``` markdown
+ batterySaverMode.py
+ ```
  
  ## Power Consumption Configuration
  (credit goes to [O491dogan](https://github.com/O491dogan)) \
